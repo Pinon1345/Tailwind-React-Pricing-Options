@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Basic Plan",
+        "price": "1000/month",
+        "path": "/pricing/basic",
+        "description": "Perfect for beginners starting their fitness journey.",
+        "features": [
+            "Access to gym equipment",
+            "Locker facility",
+            "1 hour daily access",
+            "Free WiFi",
+            "Basic support",
+            "Changing room access",
+            "Water facility"
+        ]
+    },
+
+    {
+        "id": 2,
+        "name": "Standard Plan",
+        "price": "2500/month",
+        "path": "/pricing/standard",
+        "description": "Ideal for regular users who want more training and guidance.",
+        "features": [
+            "All Basic features",
+            "2 hours daily access",
+            "Cardio & strength training",
+            "1 personal trainer session/week",
+            "Basic diet plan",
+            "Access to group classes",
+            "Body composition analysis",
+            "Flexible workout schedule"
+        ]
+    },
+
+    {
+        "id": 3,
+        "name": "Premium Plan",
+        "price": "5000/month",
+        "path": "/pricing/premium",
+        "description": "Best for advanced users who want full access and expert support.",
+        "features": [
+            "Unlimited gym access",
+            "Personal trainer (3 days/week)",
+            "Custom diet plan",
+            "Group classes (Yoga, Zumba)",
+            "Steam & shower access",
+            "24/7 access",
+            "Priority support",
+            "Supplement guidance",
+            "Monthly progress tracking"
+        ]
+    },
+
+    {
+        "id": 4,
+        "name": "Pro Plan",
+        "price": "7000/half-yearly",
+        "path": "/pricing/pro",
+        "description": "Advanced plan for athletes and serious fitness enthusiasts.",
+        "features": [
+            "All Premium features",
+            "Daily personal trainer",
+            "Advanced workout programs",
+            "Nutrition expert consultation",
+            "Injury prevention guidance",
+            "VIP locker access",
+            "Priority booking for classes",
+            "Performance tracking reports"
+        ]
+    },
+
+    {
+        "id": 5,
+        "name": "Elite Plan",
+        "price": "10000/yearly",
+        "path": "/pricing/elite",
+        "description": "Luxury VIP fitness experience with exclusive services.",
+        "features": [
+            "All Pro features",
+            "Private training sessions",
+            "Massage & recovery services",
+            "Dedicated coach",
+            "Customized supplement plan",
+            "Exclusive member lounge",
+            "Event & workshop access",
+            "24/7 premium support"
+        ]
+    }
+     
+]
