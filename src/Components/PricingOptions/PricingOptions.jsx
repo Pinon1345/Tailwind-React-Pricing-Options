@@ -2,6 +2,7 @@
 
 import { use } from "react";
 import PricingCard from "../PricingCard/PricingCard";
+// import DaisyPricing from "../DaisyPricing/DaisyPricing";
 
 const PricingOptions = ({ pricingPromise }) => {
 
@@ -10,9 +11,9 @@ const PricingOptions = ({ pricingPromise }) => {
 
     return (
         <div>
-            <h2 className="text-5xl font-semibold text-center pt-4 pb-2">Get Our Membership</h2>
+            <h2 className="text-5xl font-semibold text-center pt-5 pb-2">Get Our Membership</h2>
 
-            <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 pb-8">
                 {
                     pricingData.map(pricing => <PricingCard
                         key={pricing.id}
@@ -20,6 +21,16 @@ const PricingOptions = ({ pricingPromise }) => {
                     </PricingCard>)
 
                 }
+
+                {
+                    // pricingData.map(pricing => <DaisyPricing
+                    //     key={pricing.id}
+                    //     pricing={pricing}
+                    // ></DaisyPricing>)
+
+                }
+
+
             </div>
 
         </div>

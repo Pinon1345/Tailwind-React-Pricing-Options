@@ -75,6 +75,7 @@
         "id": 5,
         "name": "Elite Plan",
         "price": "10000/yearly",
+        "popular": true,
         "path": "/pricing/elite",
         "description": "Luxury VIP fitness experience with exclusive services.",
         "features": [

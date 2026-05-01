@@ -6,7 +6,7 @@ const PricingCard = ({ pricing }) => {
     console.log(pricing);
     const { name, price, description, features } = pricing;
     return (
-        <div className="border bg-cyan-300 px-4 pt-5 mt-5 mx-4 shadow-xl rounded-2xl">
+        <div className=" flex flex-col border-3 border-gray-400 hover:border-gray-500 bg-cyan-300 px-4 pt-5 mt-5 mx-4 shadow-xl rounded-2xl">
 
             {/* {Card Header} */}
 
@@ -17,7 +17,7 @@ const PricingCard = ({ pricing }) => {
 
             {/* Card Body */}
 
-            <div className="bg-amber-200 px-4 py-4 rounded-2xl my-3">
+            <div className="bg-amber-200 px-4 py-4 rounded-2xl my-3 flex-1">
                 <p className="text-lg font-semibold text-gray-600">{description}</p>
 
                 {
@@ -27,6 +27,8 @@ const PricingCard = ({ pricing }) => {
                 }
 
             </div>
+
+            <button className="btn btn-outline rounded-2xl text-xl font-bold w-full my-3">Subscribe</button>
 
         </div>
     );
