@@ -1,6 +1,8 @@
 // import React from 'react';
 
+import { CircleX, Menu } from "lucide-react";
 import Link from "./Link";
+import { useState } from "react";
 
 const navigationData = [
     {
@@ -31,12 +33,35 @@ const navigationData = [
 ];
 
 const NavBar = () => {
-    return (
-        <nav>
 
-            <ul className="flex">
+    const [open, setOpen] = useState(false);
+
+    const links = navigationData.map(route => <Link key={route.id} route={route}></Link>)
+
+    return (
+        <nav className="flex justify-between mx-8 mt-2">
+
+            <span className="flex items-center cursor-pointer" onClick={() => setOpen(!open)}>
+
                 {
-                    navigationData.map(route => <Link key={route.id} route={route}></Link>)
+                    open ?
+                        <CircleX className="md:hidden"></CircleX> :
+                        <Menu className="md:hidden"></Menu>
+                }
+
+                <ul className={`md:hidden duration-1000 
+                    ${open ? "top-12" : "-top-40"} 
+                    absolute 
+                    bg-orange-100`}>
+                    {links}
+                </ul>
+
+                <h2 className="ml-2 text-2xl font-bold">My Project</h2>
+            </span>
+
+            <ul className="md:flex hidden">
+                {
+                    links
                 }
             </ul>
 
@@ -55,6 +80,8 @@ const NavBar = () => {
                 <li className="mr-10"><a href="/blog"></a>BLOG</li>
 
             </ul> */}
+
+            <button className="btn text-lg font-bold">Sign In</button>
 
         </nav>
     );
